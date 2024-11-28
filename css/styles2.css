@@ -1,0 +1,225 @@
+.header-container {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    padding: 2rem 0; /* Espaciado vertical */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Texto */
+.text-content {
+    max-width: 45%; /* Limita el ancho del texto */
+}
+
+.text-content h1 {
+    font-size: 4rem; /* Tamaño del título */
+    margin-bottom: 0.5rem; /* Espaciado entre título y párrafo */
+}
+
+.text-content p {
+    font-size: 3rem; /* Tamaño del texto descriptivo */
+}
+
+/* Carrusel */
+.image-content {
+    max-width: 50%; /* Limita el ancho del carrusel */
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    border-radius: 50%; /* Forma circular */
+    width: 40px;
+    height: 40px;
+}
+/* Define un tamaño consistente para el carrusel */
+.image-content {
+    max-width: 50%; /* Limita el ancho del carrusel */
+}
+
+.carousel-inner img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 400px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+
+.navbar-brand {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0ff; /* Color cian neón */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+#section-productos {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center; /* Alineación vertical */
+    align-items: center; /* Alineación horizontal */
+    min-height: 50vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.title-productos {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0ff; /* Color cian neón */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    text-align: center;
+}
+footer {
+    background: #111; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h5 {
+    color: #0ff; /* Color cian estilo gaming */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0ff; /* Hover brillante */
+}
+
+footer .form-control {
+    border-radius: 20px;
+    border: 1px solid #555;
+}
+
+footer .btn-primary {
+    background-color: #0ff;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+footer .btn-primary:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+footer img {
+    filter: drop-shadow(0px 0px 10px #0ff); /* Efecto neón en el logo */
+}
+
+
+
+
+.navbar-brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #f00, #0ff, #f0f, #ff0, #f00);
+    border-image-slice: 1;
+    animation: move-border 5s linear infinite;
+    border-radius: 10px;
+
+}
+
+@keyframes move-border {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(100%, 0%);
+    }
+    50% {
+        transform: translate(100%, 100%);
+    }
+    75% {
+        transform: translate(0%, 100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+/* Espaciado general entre elementos del formulario */
+.d-flex {
+    gap: 15px; /* Espacio entre barra de búsqueda y botón */
+}
+
+/* Estilo de la barra de búsqueda */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background: #1e1e2f; /* Fondo oscuro gaming */
+    color: #fff; /* Texto claro */
+    outline: none;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.search-input::placeholder {
+    color: #888; /* Color placeholder */
+}
+
+.search-input:focus {
+    border-color: #0ff; /* Borde neón cian */
+    width: 250px; /* Expande al enfocar */
+}
+
+/* Botón de búsqueda */
+.search-btn {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #0ff; /* Icono cian gaming */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover {
+    color: #f0f; /* Cambia a morado al pasar */
+}
+
+/* Botón del carrito */
+.btn {
+    font-size: 1rem;
+    border: 2px solid #0ff;
+    background: transparent;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #0ff;
+    color: #000;
+}
+
